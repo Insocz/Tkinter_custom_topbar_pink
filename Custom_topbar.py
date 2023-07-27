@@ -7,7 +7,9 @@ class CustomTitleBar:
 
         self.root.overrideredirect(True)
 
-        self.root.update_idletasks();
+        self.build()
+
+    def build(self):
 
         self.topbar = tk.Canvas(self.root,background="#ef4c96",border=0,highlightthickness=0,height=30)
         self.topbar.pack(fill="both")
